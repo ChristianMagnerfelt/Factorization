@@ -1,6 +1,6 @@
 all: main.o
-	g++ -o Main main.o
-main.o: 
-	g++ -c -Wall main.cpp -lgmp -lgmpxx
+	g++ -o Main main.o -lgmpxx -lgmp
+main.o: main.cpp
+	g++ -c -Wall main.cpp
 clean:
 	rm -f *.o Main
