@@ -28,7 +28,7 @@ int main(int argc, const char * argv [])
 		// Fail if input is a prime
 		if( mpz_probab_prime_p (value.get_mpz_t(), 10) > 0)
 		{
-			std::cout << "fail" << std::endl;
+			std::cout << value << std::endl;
 			std::cout << std::endl;
 			continue;
 		}
