@@ -1,6 +1,6 @@
-all: main.o
-	g++ -o Main main.o -lgmpxx -lgmp
-main.o: main.cpp
-	g++ -c -Wall main.cpp
+all: factoring.o
+	g++ -o Factoring factoring.o -lgmpxx -lgmp
+main.o: factoring.cpp
+	g++ -c -Wall factoring.cpp
 clean:
 	rm -f *.o Main
